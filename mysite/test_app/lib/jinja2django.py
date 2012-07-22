@@ -7,8 +7,6 @@ default_mimetype = getattr(settings, 'DEFAULT_CONTENT_TYPE')
  
 # Create the Jinja2 Environment
 env = Environment(
-    line_statement_prefix='%',
-    line_comment_prefix='##',
     loader=ChoiceLoader([FileSystemLoader(path) for path in getattr(settings, 'TEMPLATE_DIRS', ())])
 )
  
