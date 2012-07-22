@@ -2,7 +2,7 @@ My Feed Installation
 ====================
 
 1. Setup python virtualenv via `sudo pip install virtualenv`.
-2. In a project directory, type virutanlenv env to create a python virtual environment.
+2. In a project directory, type virtualenv env to create a python virtual environment.
 3. (optional) install virtualenv_cd_alias via 
 `git clone https://github.com/patrick-dowell/shell_stuff.git`
 4. Install MySQL if you don't have it from <http://www.mysql.com/downloads/mysql/>.
