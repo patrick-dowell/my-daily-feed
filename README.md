@@ -7,7 +7,7 @@ My Feed Installation
 `git clone https://github.com/patrick-dowell/shell_stuff.git`
 4. Install MySQL if you don't have it from <http://www.mysql.com/downloads/mysql/>.
 5. Download MySQL-python from <http://sourceforge.net/projects/mysql-python/files/mysql-python/1.2.2/MySQL-python-1.2.2.tar.gz/download>.
-6. Once inside your virtualenv, move MySQL-python to your virtualenv by typing `mv ~/Downloads/MySQL-python-1.2.2 ./`.
+6. Once inside your virtualenv, move MySQL-python to your virtualenv by typing `mv ~/Downloads/MySQL-python-1.2.2.tar.gz ./`.
 7. Run `tar xvfz MySQL-python-1.2.2.tar.gz`.
 8. Run `cd MySQL-python-1.2.2`.
 9. Run `vi setup_posix.py`.
