@@ -21,7 +21,8 @@ My Feed Installation
 13. Run `sudo python setup.py build`.
 14. Run `sudo python setup.py install`.
 15. Return to your python virtual environment and install Django via `pip install django`.
-16. Verify your installation by typing `python` and executing the following:
+16. Also install jinja2 via `pip install Jinja2`.
+17. Verify your installation by typing `python` and executing the following:
 
 		>>>import MySQLdb
 		>>>MySQLdb.apilevel
@@ -31,9 +32,9 @@ My Feed Installation
 		(1, 4, 0, 'final', 0)
 		>>>exit() 
 		
-17. Run `cd ..` to go back one directory.
-18. Next, create a database called `myfeed` using Sequel Pro (<http://www.sequelpro.com/download/>). Make sure your mysql server is running at this point.
-19. Now, run `git clone https://github.com/patrick-dowell/my-daily-feed.git`.
-20. Config github via <https://help.github.com/articles/set-up-git>.
-21. run `python manage.py syncdb` in my_daily_feed/mysite to sync the myfeed database.
-22. run `python manage.py runserver` to start the server.
+18. Run `cd ..` to go back one directory.
+19. Next, create a database called `myfeed` using Sequel Pro (<http://www.sequelpro.com/download/>). Make sure your mysql server is running at this point.
+20. Config git via <https://help.github.com/articles/set-up-git>.
+21. Now, run `git clone https://github.com/patrick-dowell/my-daily-feed.git`.
+22. run `python manage.py syncdb` in my_daily_feed/mysite to sync the myfeed database.
+23. run `python manage.py runserver` to start the server.
