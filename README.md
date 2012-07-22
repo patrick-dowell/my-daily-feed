@@ -32,9 +32,8 @@ My Feed Installation
 		(1, 4, 0, 'final', 0)
 		>>>exit() 
 		
-18. Run `cd ..` to go back one directory.
-19. Next, create a database called `myfeed` using Sequel Pro (<http://www.sequelpro.com/download/>). Make sure your mysql server is running at this point.
-20. Config git via <https://help.github.com/articles/set-up-git>.
-21. Now, run `git clone https://github.com/patrick-dowell/my-daily-feed.git`.
-22. run `python manage.py syncdb` in my_daily_feed/mysite to sync the myfeed database.
-23. run `python manage.py runserver` to start the server.
+18. Next, create a database called `myfeed` using Sequel Pro (<http://www.sequelpro.com/download/>). Make sure your mysql server is running at this point.
+19. Config git via <https://help.github.com/articles/set-up-git>.
+20. Now, run `git clone https://github.com/patrick-dowell/my-daily-feed.git`.
+21. run `python manage.py syncdb` in my_daily_feed/mysite to sync the myfeed database.
+22. run `python manage.py runserver` to start the server.
