@@ -11,8 +11,15 @@
             {% for feed_item in feed_items %}
                 <li>
                     <a href="{{ feed_item['url'] }}">
-                        ({{ feed_item['created_at'] }}) {{ feed_item['title'] }}
+                        <h2>
+                            {{ feed_item['title'] }} &#149; <u>({{ feed_item['domain'] }})</u> &#149; {{ feed_item['source_date'] }}
+                        </h2>
+                        <img src={{ feed_item['photo_link'] }} />
+                        <p>
+                            {{ feed_item['excerpt'] }}
+                        </p>
                     </a>
+                    
                 </li>
             {% endfor %}
         </ul>
