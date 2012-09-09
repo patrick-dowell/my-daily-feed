@@ -17,9 +17,11 @@
                                    {{ feed_item['title'] }} &#149; <u>({{ feed_item['domain'] }})</u> &#149; {{ feed_item['source_date'] }}
                                </h2>
                            </a>
-                           <a href="{{ feed_item['photo_link'] }}">
-                               <img class="thumbnail" src="{{ feed_item['photo_link'] }}" />
-                           </a>
+                           {% if feed_item['photo_link'] != None %}
+                               <a href="{{ feed_item['photo_link'] }}">
+                                   <img class="thumbnail" src="{{ feed_item['photo_link'] }}" />
+                               </a>
+                           {% endif %}
                            <p class="excerpt"> 
                                {{ feed_item['excerpt'] }}
                            </p>  
