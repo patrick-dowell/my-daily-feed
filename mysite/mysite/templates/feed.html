@@ -7,20 +7,26 @@
         <link type="text/css" rel="stylesheet" href="/static/app.css" />
     </head>
     <body>
-        <ul>
-            {% for feed_item in feed_items %}
-                <li>
-                    <a href="{{ feed_item['url'] }}">
-                        <h2>
-                            {{ feed_item['title'] }} &#149; <u>({{ feed_item['domain'] }})</u> &#149; {{ feed_item['source_date'] }}
-                        </h2>
-                   	</a>
-                    <img class="thumbnail" src="{{ feed_item['photo_link'] }}" />
-                    <p> 
-                        {{ feed_item['excerpt'] }}
-                    </p>  
-                </li>
-            {% endfor %}
-        </ul>
+        <div class="wrapper">
+           <section class="feed">
+               <ul>
+                   {% for feed_item in feed_items %}
+                       <li>
+                           <a href="{{ feed_item['url'] }}">
+                               <h2>
+                                   {{ feed_item['title'] }} &#149; <u>({{ feed_item['domain'] }})</u> &#149; {{ feed_item['source_date'] }}
+                               </h2>
+                           </a>
+                           <a href="{{ feed_item['photo_link'] }}">
+                               <img class="thumbnail" src="{{ feed_item['photo_link'] }}" />
+                           </a>
+                           <p class="excerpt"> 
+                               {{ feed_item['excerpt'] }}
+                           </p>  
+                       </li>
+                   {% endfor %}
+               </ul>
+           </section>
+        </div>
     </body>
 </html>

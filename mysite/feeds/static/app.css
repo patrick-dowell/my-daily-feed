@@ -3,4 +3,35 @@
 .thumbnail {
 	max-height: 150px;
 	max-width: 150px;
+	float: left;
+	margin-right: 10px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 980px;
+}
+
+section {
+	display: inline-block;
+	width: 70%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: block;
+	min-height: 150px;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-size: 16px;
 }
