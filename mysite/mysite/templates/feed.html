@@ -1,0 +1,9 @@
+<ul>
+	{% for feed_item in feed_items %}
+		<li>
+			<a href="{{ feed_item['url'] }}">
+				({{ feed_item['created_at'] }}) {{ feed_item['title'] }}
+			</a>
+    	</li>
+	{% endfor %}
+</ul>
