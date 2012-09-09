@@ -6,9 +6,9 @@ def index(request):
     latest_feed_item_list = FeedItem.objects.all().order_by('-created_at')
     context = { "feed_items": [{"title": x.title, 
                                 "url": x.url, 
-                                "created_at": x.created_at,
+                                "created_at": x.created_at.strftime('%B %d, %Y - %I:%M %p'),
                                 "domain": x.domain,
-                                "source_date": x.source_date,
+                                "source_date": x.source_date.strftime('%B %d, %Y - %I:%M %p'),
                                 "photo_link": x.photo_link,
                                 "byline": x.byline,
                                 "excerpt": x.excerpt} 
